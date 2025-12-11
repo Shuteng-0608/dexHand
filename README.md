@@ -43,10 +43,10 @@ It allows you to develop in an isolated environment, outside of the core Isaac L
         # use 'FULL_PATH_TO_isaaclab.sh|bat -p' instead of 'python' if Isaac Lab is not installed in Python venv or conda
         python scripts/<RL_LIBRARY>/train.py --task=<TASK_NAME>
         ```
-    - Running a task with multi-GPU:
+    - Training a task with Multi-GPU:
 
         ```bash
-        python -m torch.distributed.run --nnodes=1 --nproc_per_node=4 scripts/skrl/train.py --task=Isaac-Cartpole-v0 --headless --distributed
+        python -m torch.distributed.run --nnodes=1 --nproc_per_node=4 scripts/skrl/train.py --task=<TASK NAME> --headless --distributed
         ```
 
     - Running a task with dummy agents:
